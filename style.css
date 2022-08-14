@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C111B;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10000
+}
+
+ul {
+    display: flex;
+    background-color: #131A28;
+    padding: 17px;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 120px;
+    align-items: center;
+    animation: all 2s;
+}
+
+ul input {
+    width: 300px;
+    height: 35px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #8B8E95;
+    outline: none;
+    color: #909399;
+    font-size: 17px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul img {
+    padding: 0px 0px 7px;
+}
+
+.insert-icon {
+    position: relative;
+}
+
+::placeholder {
+    color: #D0D1D4
+}
+
+.insert-icon i {
+    position: absolute;
+    font-size: 19px;
+    color: #646C71;
+    left: 14.5em;
+}
+
+.smallresult {
+    width: 350px;
+    height: 540px;
+    background-color: #0C101A;
+    position: absolute;
+    border-radius: 12px;
+    display: none;
+    border: 1px solid #192133;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.append {
+    padding: 2px;
+    height: 490px;
+}
+
+.append>div {
+    display: flex;
+    background: #192133;
+    padding-top: 2px;
+    border-radius: 8px;
+    place-items: center;
+    padding: 1px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.append>div:hover {
+    box-shadow: 0px 2px 5px 0px #192133;
+}
+
+.append>div>div {
+    padding: 12px;
+}
+
+.append>div>div h1 {
+    font-size: 17px;
+    color: #fff;
+}
+
+.append>div>div p {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 2px;
+    text-overflow: ellipsis;
+}
+
+.append img {
+    width: 60%;
+    border-radius: 6px;
+    padding: 2px 2px 2px 2px;
+}
+
+.btn-more {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.btn-more button {
+    padding: 8px 160px 8px 160px;
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    background-color: #192133;
+    border: 1px solid #192133;
+    text-transform: uppercase;
+}
+
+.appendmovie {
+    display: grid;
+    padding-top: 5.6em;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    margin: auto;
+    grid-gap: 28px;
+}
+
+.appendmovie>div {
+    background: #131a28;
+    margin: auto;
+    color: rgb(174, 167, 167);
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.appendmovie>div h3 {
+    line-height: 2;
+    padding: 5px;
+}
+
+.appendmovie img {
+    width: 320px;
+    border-radius: 5px;
+}
+
+.rate {
+    position: absolute;
+    top: 20em;
+    left: 21em;
+    font-size: 17px;
+}
